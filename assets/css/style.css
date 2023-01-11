@@ -1,0 +1,179 @@
+@font-face {
+    font-family: latoBold;
+    src: url(../fonts/Lato/Lato-Black.ttf);
+}
+@font-face {
+    font-family: latoRegular;
+    src: url(../fonts/Lato/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: latoLight;
+    src: url(../fonts/Lato/Lato-Light.ttf);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.header{
+    background-image: url("../images/destination.jpg");
+    height: 100vh;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: #fff;
+}
+
+.header h1{
+    padding:240px 0px 60px 0px;
+    font-size: 70px;
+    font-family: latoBold;
+}
+
+.header p{
+    font-size: 24px;
+    padding-bottom: 10px;
+    font-family: latoRegular;
+    font-weight:500;
+}
+
+.overlay{
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    width: 80%;
+    height: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.header-center{
+   display: flex; 
+   justify-content:center;
+   text-align: center;
+}
+
+.center-content1{
+    width: 50%;
+}
+.center-content2{
+    width: 30%;
+}
+.center-content3{
+    width: 20%;
+}
+
+
+.travel-location{
+  width: 95%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 3px;
+  font-family: latoRegular;
+  color: rgba(49, 49, 49, 0.76);
+  letter-spacing: 1px;
+}
+
+.travel-date{
+    width: 95%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 3px;
+    font-family: latoRegular;
+    letter-spacing: 1px;
+}
+
+.search{
+    background-color: rgb(176, 116, 133);
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: latoRegular;
+    letter-spacing: 1px;
+}
+.menue{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.item .menue-content{
+    float:left;
+    width:33.33%;
+}
+.menue-content img{
+    width: 80%;
+}
+.item{
+    overflow: hidden;
+    padding-top: 30px;
+}
+.paragraph p{
+    margin-bottom: 20px;
+}
+img{
+    border-radius: 5px;
+}
+.subheading{
+    color: #e2c0bb;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-family: "Poppins", Arial, sans-serif;
+    font-weight: 400;
+}
+.numOfDay{
+    font-weight: 500;
+    font-size: 12px;
+    font-family: "Poppins", Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #999999;
+    text-align: left;
+}
+.mp4{
+    font-size: 40px;
+    font-weight: 300;
+    color: black;
+}
+.Classess{
+    font-weight: 300;
+    color: black;
+}
+h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+.mp3{
+    color: #999999;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+}
+.menue-content p{
+    width: 70%;
+    line-height: 25px;
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+.menue-content{
+    padding-bottom: 30px;
+}
