@@ -105,3 +105,75 @@
     font-family: latoRegular;
     letter-spacing: 1px;
 }
+.menue{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.item .menue-content{
+    float:left;
+    width:33.33%;
+}
+.menue-content img{
+    width: 80%;
+}
+.item{
+    overflow: hidden;
+    padding-top: 30px;
+}
+.paragraph p{
+    margin-bottom: 20px;
+}
+img{
+    border-radius: 5px;
+}
+.subheading{
+    color: #e2c0bb;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-family: "Poppins", Arial, sans-serif;
+    font-weight: 400;
+}
+.numOfDay{
+    font-weight: 500;
+    font-size: 12px;
+    font-family: "Poppins", Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #999999;
+    text-align: left;
+}
+.mp4{
+    font-size: 40px;
+    font-weight: 300;
+    color: black;
+}
+.Classess{
+    font-weight: 300;
+    color: black;
+}
+h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+.mp3{
+    color: #999999;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+}
+.menue-content p{
+    width: 70%;
+    line-height: 25px;
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+.menue-content{
+    padding-bottom: 30px;
+}
