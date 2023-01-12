@@ -22,6 +22,45 @@
     margin: auto;
 }
 
+nav{
+    width: 100%;
+    background-color: non;
+    position: absolute;
+    margin-top: 15px;
+}
+nav img{
+    width: 130px;
+margin-left: 30px;
+    position:absolute;
+}
+.nav-links{
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 15px;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    font-family:"Poppins", Arial, sans-serif;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #9c89ad;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
 .header{
     background-image: url("../images/destination.jpg");
     height: 100vh;
@@ -176,4 +215,64 @@ h3{
 }
 .menue-content{
     padding-bottom: 30px;
+}
+.left{
+    float:left;
+    width:39%;
+    margin-left: 70px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+.left-contant{
+    background-color: #d4d3d3;
+    margin: 0px 10px 15px 10px;
+}
+.above{
+    padding: 10px ;
+    text-align: left;
+}
+.above i{
+    float: left;
+    padding: 3px 5px 3px 5px;
+}
+.inside{
+    padding: 10px 6px 20px 6px ;
+    text-align: left;
+    margin-left: 25px;
+
+}
+.inside p{
+    font-size: 13px;
+    font-family: "Poppins", Arial, sans-serif;
+    font-weight: 100;
+}
+.right{
+    background-color: #d4d3d3;
+    float:left;
+    width:45%;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.right input[type=text] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 25px 0px 25px ;
+    /* box-sizing: border-box; */
+}
+.right textarea{
+    margin: 10px 10px 10px 15px;
+    padding: 10px;
+    width: 90%;
+
+}
+.right input[type=submit]{
+    /* margin: 10px; */
+    padding: 10px 30px 10px 30px ;
+    margin-right: 245px;
+    background-color: #c79bb6;
+    color: #fff;
+    border: none;
+    font-family: latoRegular;
 }
