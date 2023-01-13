@@ -17,10 +17,8 @@
     box-sizing:border-box
 }
 
-.container{
-    width: 80%;
-    margin: auto;
-}
+
+/* navbar */
 
 nav{
     width: 100%;
@@ -61,6 +59,8 @@ margin-left: 30px;
 .nav-links ul li:hover::after{
     width: 100%;
 }
+
+/* header */
 .header{
     background-image: url("../images/destination.jpg");
     height: 100vh;
@@ -75,11 +75,11 @@ margin-left: 30px;
     padding:240px 0px 60px 0px;
     font-size: 70px;
     font-family: latoBold;
+    width: 50%;
 }
 
 .header p{
     font-size: 24px;
-    padding-bottom: 10px;
     font-family: latoRegular;
     font-weight:500;
 }
@@ -87,28 +87,12 @@ margin-left: 30px;
 .overlay{
     background-color: rgba(255, 255, 255, 0.5);
     position: absolute;
-    width: 80%;
+    width: 85%;
     height: auto;
     text-align: center;
     padding: 10px;
+    margin: auto;
 }
-
-.header-center{
-   display: flex; 
-   justify-content:center;
-   text-align: center;
-}
-
-.center-content1{
-    width: 50%;
-}
-.center-content2{
-    width: 30%;
-}
-.center-content3{
-    width: 20%;
-}
-
 
 .travel-location{
   width: 95%;
@@ -144,6 +128,9 @@ margin-left: 30px;
     font-family: latoRegular;
     letter-spacing: 1px;
 }
+
+
+
 .menue{
     text-align: center;
     margin-top: 50px;
@@ -275,4 +262,31 @@ h3{
     color: #fff;
     border: none;
     font-family: latoRegular;
+}
+
+@media (max-width:576px){
+  
+    .header h1{
+        padding:200px 0px 20px 0px;
+        font-size: 36px;
+        width: 100%;
+    }
+    .overlay{
+        width: 94%;
+    }
+    .header p{
+        font-size: 21px;
+    }
+   
+}
+
+@media (576px < width <= 850px){
+    .header h1{
+        padding-top: 400px;
+        font-size: 65px;
+        width: 100%;
+    }
+    .header p{
+        font-size: 28px;
+    }
 }
