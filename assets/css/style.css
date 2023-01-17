@@ -18,48 +18,25 @@
 }
 
 
-/* navbar */
+/*navbar*/
 
-nav{
-    width: 100%;
-    background-color: non;
-    position: absolute;
-    margin-top: 15px;
+.header a{
+    color: white;
 }
-nav img{
-    width: 130px;
-margin-left: 30px;
-    position:absolute;
+.navbarcolored{
+    transition:500ms ease;
+    background-color: #000;
 }
-.nav-links{
-    text-align: right;
+.active{
+    color: rgb(176, 116, 133) !important;
+    text-decoration: underline !important;
+    text-decoration-color: rgb(176, 116, 133) !important;
+    text-underline-position: under
+  
 }
-
-.nav-links ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 10px 15px;
+.nav-link:hover {
+    color: rgb(176, 116, 133) !important;
 }
-.nav-links ul li a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 22px;
-    font-weight: bold;
-    font-family:"Poppins", Arial, sans-serif;
-}
-.nav-links ul li::after{
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: #9c89ad;
-    display: block;
-    margin: auto;
-    transition: 0.5s;
-}
-.nav-links ul li:hover::after{
-    width: 100%;
-}
-
 /* header */
 .header{
     background-image: url("../images/destination.jpg");
@@ -69,10 +46,16 @@ margin-left: 30px;
     background-repeat: no-repeat;
     position: relative;
     color: #fff;
+    overflow: hidden;
 }
-
+.overlay{
+    background-color: rgb(0,0,0,.1);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
 .header h1{
-    padding:240px 0px 60px 0px;
+    padding:200px 0px 60px 0px;
     font-size: 70px;
     font-family: latoBold;
     width: 50%;
@@ -84,7 +67,7 @@ margin-left: 30px;
     font-weight:500;
 }
 
-.overlay{
+.white-overlay{
     background-color: rgba(255, 255, 255, 0.5);
     position: absolute;
     width: 85%;
@@ -211,7 +194,7 @@ h3{
     margin-bottom: 20px;
 }
 .left-contant{
-    background-color: #d4d3d3;
+    background-color: #f8f9fa;
     margin: 0px 10px 15px 10px;
 }
 .above{
@@ -234,7 +217,7 @@ h3{
     font-weight: 100;
 }
 .right{
-    background-color: #d4d3d3;
+    background-color: #f8f9fa;
     float:left;
     width:45%;
     margin-left: 10px;
@@ -255,7 +238,6 @@ h3{
 
 }
 .right input[type=submit]{
-    /* margin: 10px; */
     padding: 10px 30px 10px 30px ;
     margin-right: 245px;
     background-color: #c79bb6;
@@ -265,13 +247,19 @@ h3{
 }
 
 @media (max-width:576px){
+    .navbar{
+        background-color: #000;
+    }
   
     .header h1{
-        padding:200px 0px 20px 0px;
+        padding:140px 0px 20px 0px;
         font-size: 36px;
         width: 100%;
     }
     .overlay{
+        width: 100%;
+    }
+    .white-overlay{
         width: 94%;
     }
     .header p{
@@ -282,7 +270,7 @@ h3{
 
 @media (576px < width <= 850px){
     .header h1{
-        padding-top: 400px;
+        padding-top: 220px;
         font-size: 65px;
         width: 100%;
     }
