@@ -2,72 +2,79 @@
     font-family: latoBold;
     src: url(../fonts/Lato/Lato-Black.ttf);
 }
+
 @font-face {
     font-family: latoRegular;
     src: url(../fonts/Lato/Lato-Regular.ttf);
 }
+
 @font-face {
     font-family: latoLight;
     src: url(../fonts/Lato/Lato-Light.ttf);
 }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
 }
 
 
 /*navbar*/
 
-.header a{
+.header a {
     color: white;
 }
-.navbarcolored{
-    transition:500ms ease;
+
+.navbarcolored {
+    transition: 500ms ease;
     background-color: #000;
 }
-.active{
-    color: rgb(176, 116, 133) !important;
-    text-decoration: underline !important;
-    text-decoration-color: rgb(176, 116, 133) !important;
-    text-underline-position: under
-  
-}
+
 .nav-link:hover {
     color: rgb(176, 116, 133) !important;
 }
+
 /* header */
-.header{
+.header {
     background-image: url("../images/destination.jpg");
     height: 100vh;
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
     color: #fff;
     overflow: hidden;
 }
-.overlay{
-    background-color: rgb(0,0,0,.1);
+
+.header .active {
+    color: rgb(176, 116, 133) !important;
+    text-decoration: underline !important;
+    text-decoration-color: rgb(176, 116, 133) !important;
+    text-underline-position: under
+}
+
+.overlay {
+    background-color: rgb(0, 0, 0, .1);
     position: absolute;
     width: 100%;
     height: 100%;
 }
-.header h1{
-    padding:200px 0px 60px 0px;
+
+.header h1 {
+    padding: 200px 0px 60px 0px;
     font-size: 70px;
     font-family: latoBold;
     width: 50%;
 }
 
-.header p{
+.header p {
     font-size: 24px;
     font-family: latoRegular;
-    font-weight:500;
+    font-weight: 500;
 }
 
-.white-overlay{
+.white-overlay {
     background-color: rgba(255, 255, 255, 0.5);
     position: absolute;
     width: 85%;
@@ -77,18 +84,18 @@
     margin: auto;
 }
 
-.travel-location{
-  width: 95%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 3px;
-  font-family: latoRegular;
-  color: rgba(49, 49, 49, 0.76);
-  letter-spacing: 1px;
+.travel-location {
+    width: 95%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 3px;
+    font-family: latoRegular;
+    color: rgba(49, 49, 49, 0.76);
+    letter-spacing: 1px;
 }
 
-.travel-date{
+.travel-date {
     width: 95%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -98,7 +105,7 @@
     letter-spacing: 1px;
 }
 
-.search{
+.search {
     background-color: rgb(176, 116, 133);
     width: 90%;
     padding: 12px 20px;
@@ -114,36 +121,42 @@
 
 
 
-.menue{
+.menue {
     text-align: center;
     margin-top: 50px;
 }
 
-.item .menue-content{
-    float:left;
-    width:33.33%;
+.item .menue-content {
+    float: left;
+    width: 33.33%;
 }
-.menue-content img{
+
+.menue-content img {
     width: 80%;
 }
-.item{
+
+.item {
     overflow: hidden;
     padding-top: 30px;
 }
-.paragraph p{
+
+.paragraph p {
     margin-bottom: 20px;
 }
-img{
+
+img {
     border-radius: 5px;
 }
-.subheading{
+
+.subheading {
     color: #e2c0bb;
     letter-spacing: 2px;
     font-size: 16px;
     font-family: "Poppins", Arial, sans-serif;
     font-weight: 400;
 }
-.numOfDay{
+
+.numOfDay {
     font-weight: 500;
     font-size: 12px;
     font-family: "Poppins", Arial, sans-serif;
@@ -152,16 +165,19 @@ img{
     color: #999999;
     text-align: left;
 }
-.mp4{
+
+.mp4 {
     font-size: 40px;
     font-weight: 300;
     color: black;
 }
-.Classess{
+
+.Classess {
     font-weight: 300;
     color: black;
 }
-h3{
+
+h3 {
     font-size: 20px;
     font-weight: 600;
     color: #000000;
@@ -169,76 +185,88 @@ h3{
     font-family: "Cormorant Garamond", Georgia, serif;
 }
 
-.mp3{
+.mp3 {
     color: #999999;
     font-family: "Poppins", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.8;
     font-weight: 400;
 }
-.menue-content p{
+
+.menue-content p {
     width: 70%;
     line-height: 25px;
     text-align: left;
     padding-left: 40px;
     padding-top: 10px;
 }
-.menue-content{
+
+.menue-content {
     padding-bottom: 30px;
 }
-.left{
-    float:left;
-    width:39%;
+
+.left {
+    float: left;
+    width: 39%;
     margin-left: 70px;
     margin-right: 10px;
     margin-bottom: 20px;
 }
-.left-contant{
+
+.left-contant {
     background-color: #f8f9fa;
     margin: 0px 10px 15px 10px;
 }
-.above{
-    padding: 10px ;
+
+.above {
+    padding: 10px;
     text-align: left;
 }
-.above i{
+
+.above i {
     float: left;
     padding: 3px 5px 3px 5px;
 }
-.inside{
-    padding: 10px 6px 20px 6px ;
+
+.inside {
+    padding: 10px 6px 20px 6px;
     text-align: left;
     margin-left: 25px;
 
 }
-.inside p{
+
+.inside p {
     font-size: 13px;
     font-family: "Poppins", Arial, sans-serif;
     font-weight: 100;
 }
-.right{
+
+.right {
     background-color: #f8f9fa;
-    float:left;
-    width:45%;
+    float: left;
+    width: 45%;
     margin-left: 10px;
     margin-right: 10px;
     padding: 15px;
     margin-bottom: 20px;
 }
+
 .right input[type=text] {
     width: 90%;
     padding: 10px;
-    margin: 10px 25px 0px 25px ;
+    margin: 10px 25px 0px 25px;
     /* box-sizing: border-box; */
 }
-.right textarea{
+
+.right textarea {
     margin: 10px 10px 10px 15px;
     padding: 10px;
     width: 90%;
 
 }
-.right input[type=submit]{
-    padding: 10px 30px 10px 30px ;
+
+.right input[type=submit] {
+    padding: 10px 30px 10px 30px;
     margin-right: 245px;
     background-color: #c79bb6;
     color: #fff;
@@ -246,35 +274,173 @@ h3{
     font-family: latoRegular;
 }
 
-@media (max-width:576px){
-    .navbar{
+@media (max-width:576px) {
+    .navbar {
         background-color: #000;
     }
-  
-    .header h1{
-        padding:140px 0px 20px 0px;
+
+    .header h1 {
+        padding: 140px 0px 20px 0px;
         font-size: 36px;
         width: 100%;
     }
-    .overlay{
+
+    .overlay {
         width: 100%;
     }
-    .white-overlay{
+
+    .white-overlay {
         width: 94%;
     }
-    .header p{
+
+    .header p {
         font-size: 21px;
     }
-   
+
 }
 
-@media (576px < width <= 850px){
-    .header h1{
+.more {
+    display: flex;
+    justify-content: center;
+}
+
+#one {
+    color: aliceblue;
+    background-color: #5e384f;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+#one:hover {
+    background-color: #777171;
+}
+
+.more p {
+    margin: 10px;
+}
+
+.welcome {
+    margin-top: 80px;
+    /* background-color: aqua; */
+    padding-left: 40px;
+    width: 90%;
+    margin-left: 70px;
+}
+
+.welcome2 {
+    margin-top: 30px;
+    /* background-color: aqua; */
+    /* padding-left: -40px; */
+    width: 90%;
+    margin-left: 30px;
+}
+
+.price {
+    color: #c79bb6;
+}
+
+#per {
+    font-size: small;
+    font-weight: 400;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+.welcome h1 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    text-decoration: none;
+}
+
+.welcome h4 {
+    color: #777676;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+.welcome p {
+    color: #9c9c9c;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+.book button {
+    margin-left: 190px;
+    padding: 10px 20px;
+    color: aliceblue;
+    background-color: #5e384f;
+    border: none;
+    border-radius: 20px;
+}
+
+.look {
+    margin-top: 40px;
+    /* background-color: #000000; */
+    height: 500px;
+    width: 100%;
+    padding-left: 60px;
+}
+
+.front {
+    float: left;
+    height: 430px;
+    width: 60%;
+    z-index: 99;
+    position: relative;
+    margin-top: 40px;
+}
+
+.front img {
+    height: 430px;
+    width: 100%;
+}
+
+.back {
+    float: left;
+    margin-left: -220px;
+    height: 430px;
+    z-index: -99;
+    width: 60%;
+    border: 1px solid;
+    border-color: #9da6ad;
+}
+
+.slides {
+    width: 60%;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.mage{
+    height: 450px;
+    width: 100%;
+}
+.mage img{
+    height: 100%;
+    width: 100%;
+}
+.top {
+    margin-top: 30px;
+}
+
+.top h1 {
+    text-align: center;
+    font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+.top p {
+    text-align: center;
+    font-family: "Poppins", Arial, sans-serif;
+    color: #777171;
+}
+
+@media (576px < width <=850px) {
+    .header h1 {
         padding-top: 220px;
         font-size: 65px;
         width: 100%;
     }
-    .header p{
+
+    .header p {
         font-size: 28px;
     }
 }
