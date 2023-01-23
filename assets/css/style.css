@@ -122,17 +122,14 @@
 
 
 
-.menue {
+.menu{
     text-align: center;
     margin-top: 50px;
 }
 
-.item .menue-content {
-    float: left;
-    width: 33.33%;
-}
 
-.menue-content img {
+
+.menu-content img {
     width: 80%;
 }
 
@@ -141,9 +138,6 @@
     padding-top: 30px;
 }
 
-.paragraph p {
-    margin-bottom: 20px;
-}
 
 img {
     border-radius: 5px;
@@ -160,6 +154,7 @@ img {
 .numOfDay {
     font-weight: 500;
     font-size: 12px;
+    padding-top: 12px;
     font-family: "Poppins", Arial, sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -194,15 +189,16 @@ h3 {
     font-weight: 400;
 }
 
-.menue-content p {
+.menu-content p {
     width: 70%;
     line-height: 25px;
     text-align: left;
     padding-left: 40px;
-    padding-top: 10px;
+    margin-bottom: 0px;
 }
 
-.menue-content {
+
+.menu-content {
     padding-bottom: 30px;
 }
 
