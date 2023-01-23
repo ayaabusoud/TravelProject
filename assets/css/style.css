@@ -27,7 +27,7 @@
     transition:500ms ease;
     background-color: #000;
 }
-.active{
+.header .active, .list-group .active{
     color: rgb(176, 116, 133) !important;
     text-decoration: underline !important;
     text-decoration-color: rgb(176, 116, 133) !important;
@@ -269,6 +269,7 @@ h3{
 }
 
 @media (576px < width <= 850px){
+
     .header h1{
         padding-top: 220px;
         font-size: 65px;

@@ -1,0 +1,289 @@
+@font-face {
+    font-family: latoBold;
+    src: url(../fonts/Lato/Lato-Bold.ttf);
+}
+@font-face {
+    font-family: latoRegular;
+    src: url(../fonts/Lato/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: latoLight;
+    src: url(../fonts/Lato/Lato-Light.ttf);
+}
+*{
+    font-family: latoRegular;
+}
+
+h1{
+    text-align: center;
+    padding: 50px 0 30px 0 ;
+    font-family:latoBold ;
+}
+
+h3{
+    font-size: 15px;
+}
+
+h2{
+    padding-top: 20px;
+}
+p{
+    font-size: 13px;
+}
+
+.option{
+    margin-left: 20px;
+}
+
+
+.restaurant-menu{
+    padding-left: 130px;
+}
+
+.container{
+    width: 70%;
+}
+.book-table{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.menu-container{
+    background-color:  #f8f9fa;
+    position: absolute;
+    width: 500px;
+    height: 570px;
+    margin-left: 100px;
+    z-index: -99;
+}
+
+.booking-container{
+    background-color:  #f8f9fa;
+    position: absolute;
+    width: 500px;
+    height: 550px;
+    z-index: -99;
+    right: 350px;
+}
+
+.restaurant-menu-image img{
+    width: 380px;
+    height: 440px;
+    margin-top: 30px;
+}
+
+.restaurant-book-image img{
+    width: 380px;
+    height: 440px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.book-form input{
+    margin-bottom: 10px;
+}
+
+.book-table h2{
+    padding-top: 70px;
+}
+
+.book-table p{
+    padding-bottom: 30px;
+}
+
+.book-table button{
+    margin-top: 10px;
+    margin-left: 80px;
+    background-color: rgb(176, 116, 133);
+    border-color: rgb(176, 116, 133);
+}
+
+.book-table button:hover{
+    background-color: rgb(152, 101, 116);
+    border-color: rgb(152, 101, 116);
+}
+
+.list-group-item{
+    background-color: transparent !important;
+    border: none;
+}
+
+.active{
+    background-color: transparent !important; 
+}
+
+.list-options{
+margin-left: 110px;
+}
+
+@media (max-width:576px){
+    .container{
+        width: 99%;
+    }
+    .restaurant-menu-image{
+        text-align: center;
+    } 
+    .text{
+        width: 80%;
+    }
+    .restaurant-menu {
+       padding-left: 30px;
+    }
+    .menu-container{
+        display: none;
+    }
+    .restaurant-menu{
+        margin-left: 0px;
+    }
+    .booking-container{
+        display: none;
+    }
+    .list-options{
+    margin-left: 0px;
+    margin: auto; 
+    }
+
+    .book-form{
+        margin: auto;
+    }
+    .restaurant-book-image{
+        text-align: center;
+    }
+    .restaurant-menu-image img{
+        width: 300px;
+        height: 350px; 
+    }
+    
+    .restaurant-book-image img{
+       margin-left: 0px;
+       width: 300px;
+       height: 350px;
+    }
+    .book-table h2 , .book-table p {
+       text-align: center;
+    }
+
+    .book-table button{
+        margin-top: 10px;
+        margin-left: 90px;
+        margin-bottom: 100px;
+    }
+    
+    h2{
+        font-size: 30px;
+    }
+
+    .row-list{
+        margin: auto;
+    }
+    .menu{
+        width: 30% !important;
+    }
+}
+
+  
+@media (576px < width <= 850px){
+    .container{
+        width: 99%;
+    }
+    .restaurant-menu-image{
+        text-align: center;
+    } 
+    .text{
+        width: 80%;
+    }
+    .restaurant-menu {
+       padding-left: 0px;
+    }
+    .menu-container{
+        display: none;
+    }
+    .restaurant-menu{
+        margin-left: 80px;
+    }
+    .booking-container{
+        display: none;
+    }
+    .list-options{
+    margin-left: 100px;
+    margin: auto;        
+    font-size: 20px;
+    }
+    .book-form{
+        width: 60%;
+        margin: auto;
+    }
+    .restaurant-book-image{
+        text-align: center;
+    }
+    .restaurant-book-image img{
+       margin-left: 0px;
+    }
+    .book-table h2 , .book-table p {
+       text-align: center;
+    }
+
+    .book-table button{
+        margin-top: 10px;
+        margin-left: 140px;
+        margin-bottom: 100px;
+    }
+    h1{
+        font-size: 50px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    
+    h2{
+        font-size: 40px;
+    }
+    p{
+        font-size: 18px;
+    }
+    .row-list{
+        margin: auto;
+    }
+    
+ 
+
+
+}  
+
+
+@media (850px < width <= 1300px){
+    
+    .menu-container{
+        height: 670px;
+        margin-left: 90px;
+    }
+
+    .restaurant-menu-image img{
+        margin-top: 75px;
+        margin-left: 10px;
+    }
+
+    .booking-container{
+        right: 220px;
+    }
+    
+    .restaurant-book-image img{
+        margin-top: 60px;
+        margin-left: 80px;
+    }
+
+    .book-form{
+        margin-left: 50px;
+    }
+
+    .book-table button{
+        margin-left: 80px;
+    }
+
+    .col-xl-4 {
+        width: 42.333333%;
+    }
+
+    
+
+}
