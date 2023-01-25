@@ -273,10 +273,7 @@ h3 {
     border: none;
     font-family: latoRegular;
 }
-.right input[type=submit]:hover{
-    background-color: #9b8f9c;
-    color: rgb(255, 246, 246);
-}
+
 
 @media (max-width:576px) {
     .right input[type=submit] {
