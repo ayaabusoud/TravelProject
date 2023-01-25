@@ -310,6 +310,9 @@ h3 {
 }
 
 @media (576px < width <= 850px){
+    .menu-content p {
+        padding-left: 80px;
+    }
     .header h1{
         padding-top: 220px;
         font-size: 65px;
