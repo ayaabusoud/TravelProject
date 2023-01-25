@@ -47,14 +47,16 @@ p{
     margin-top: 100px;
     margin-bottom: 100px;
 }
-
+.menu{
+    margin-top: 10px;
+}
 .menu-container{
     background-color:  #f8f9fa;
     position: absolute;
     width: 500px;
-    height: 50px;
+    height: 600px ;
     margin-left: 100px;
-    z-index: -99;
+    z-index: -99 ;
 }
 
 .booking-container{
@@ -254,7 +256,7 @@ margin-left: 110px;
 @media (850px < width <= 1300px){
     
     .menu-container{
-        height: 670px;
+        height: 680px;
         margin-left: 90px;
     }
 

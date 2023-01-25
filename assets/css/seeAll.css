@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+h1 {
+    font-size: 20px;
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    width: 70%;
+}
+
+.container {
+    width: 70% !important;
+}
+
+.menu-content p {
+    padding-left: 0px;
+}
+
+.numOfDay {
+    padding-top: 0px;
+}
+
+.hotelPrice {
+    padding-top: 10px;
+    text-transform: lowercase;
+}
+
+.city{
+    padding-top: 10px;
+}
+.search-property-1 .form-group .form-control {
+    padding-left: 10px;
+    height: 38px !important;
+    font-size: 16px;
+    border: 1px solid #e2c0bb !important;
+    color: rgba(0, 0, 0, 0.4) !important;
+    background: transparent !important;
+    border-radius: 0;
+}
+
+.search-property-1 .form-group .form-control.btn {
+    padding: 0 10px !important;
+    font-size: 16px;
+    background: #e2c0bb !important;
+    border: none !important;
+    color: #fff !important;
+}
+
+.label {
+    padding-bottom: 3px;
+}
+
+.mt-5 {
+    margin-top: 3rem !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.block-27 ul li {
+    display: inline-block;
+    margin-bottom: 4px;
+    font-weight: 400;
+}
+
+.findRes {
+    font-size: 22px;
+}
+
+.block-27 ul li a,
+.block-27 ul li span {
+    color: #b2bbc9;
+    text-align: center;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    border-radius: 50%;
+    border: 1px solid #cccccc;
+    text-decoration: none;
+}
+
+.block-27 ul li.active a,
+.block-27 ul li.active span {
+    background: #b2bbc9;
+    color: #fff;
+    border: 1px solid transparent;
+}
