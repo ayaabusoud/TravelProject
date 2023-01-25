@@ -30,6 +30,13 @@
     transition: 500ms ease;
     background-color: #000;
 }
+.header .active, .list-group .active{
+    color: rgb(176, 116, 133) !important;
+    text-decoration: underline !important;
+    text-decoration-color: rgb(176, 116, 133) !important;
+    text-underline-position: under
+  
+}
 
 .nav-link:hover {
     color: rgb(176, 116, 133) !important;
@@ -47,12 +54,6 @@
     overflow: hidden;
 }
 
-.header .active {
-    color: rgb(176, 116, 133) !important;
-    text-decoration: underline !important;
-    text-decoration-color: rgb(176, 116, 133) !important;
-    text-underline-position: under
-}
 
 .overlay {
     background-color: rgb(0, 0, 0, .1);
@@ -121,17 +122,14 @@
 
 
 
-.menue {
+.menu{
     text-align: center;
     margin-top: 50px;
 }
 
-.item .menue-content {
-    float: left;
-    width: 33.33%;
-}
 
-.menue-content img {
+
+.menu-content img {
     width: 80%;
 }
 
@@ -140,9 +138,6 @@
     padding-top: 30px;
 }
 
-.paragraph p {
-    margin-bottom: 20px;
-}
 
 img {
     border-radius: 5px;
@@ -159,6 +154,7 @@ img {
 .numOfDay {
     font-weight: 500;
     font-size: 12px;
+    padding-top: 12px;
     font-family: "Poppins", Arial, sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -193,15 +189,16 @@ h3 {
     font-weight: 400;
 }
 
-.menue-content p {
+.menu-content p {
     width: 70%;
     line-height: 25px;
     text-align: left;
     padding-left: 40px;
-    padding-top: 10px;
+    margin-bottom: 0px;
 }
 
-.menue-content {
+
+.menu-content {
     padding-bottom: 30px;
 }
 
@@ -259,7 +256,7 @@ h3 {
 }
 
 .right textarea {
-    margin: 10px 10px 10px 17px;
+    margin: 10px 10px 10px 15px;
     padding: 10px;
     width: 90%;
 
@@ -268,29 +265,32 @@ h3 {
 .right input[type=submit] {
     padding: 10px 30px 10px 30px;
     margin-right: 245px;
-    background-color: #922d6b;
+    background-color: #d465aa;
     color: #fff;
     border: none;
     font-family: latoRegular;
 }
-
-
+.right input[type=submit]:hover {
+    background-color: #777171;
+}
 @media (max-width:576px) {
-    .right input[type=submit] {
-        background-color: #a70c6b;
-        margin-left: 23px;
-        
+    .right textarea {
+        margin-right: -20px;
+        padding: 10px;
+        width: 90%;
+    
     }
-    .right textarea{
-        margin-right: -13px;
+    .right input[type=submit]{
+        margin-left: 30px;
     }
-    .left {
-        float: left;
-        width: 39%;
-        margin-left:5px;
-        margin-right: 5px;
-        margin-bottom: 20px;
-    }
+.left {
+    margin-left: 20px;
+    margin-right: 5px;
+}
+.right {
+    margin-left: 5px;
+    margin-right: 5px;
+}
     .navbar {
         background-color: #000;
     }
@@ -328,6 +328,33 @@ h3 {
     padding: 10px 20px;
 }
 
+@media (576px < width <= 850px){
+    .right textarea {
+        margin-right: -20px;
+        padding: 10px;
+        width: 90%;
+    
+    }
+    .right input[type=submit]{
+        margin-left: 30px;
+    }
+    .left {
+        margin-left: 20px;
+        margin-right: 5px;
+    }
+    .right {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .header h1{
+        padding-top: 220px;
+        font-size: 65px;
+        width: 100%;
+    }
+    .header p{
+        font-size: 28px;
+    }
+    
 #one:hover {
     background-color: #777171;
 }
@@ -346,6 +373,8 @@ h3 {
 
 .welcome2 {
     margin-top: 30px;
+    /* background-color: aqua; */
+    /* padding-left: -40px; */
     width: 90%;
     margin-left: 30px;
 }
@@ -447,27 +476,4 @@ h3 {
     color: #777171;
 }
 
-@media (576px < width <=850px) {
-    .header h1 {
-        padding-top: 220px;
-        font-size: 65px;
-        width: 100%;
-    }
-    .right input[type=submit] {
-        background-color: #a70c6b;
-        margin-left: 23px;
-    }
-    .right textarea{
-        margin-right: -13px;
-    }
-    .left {
-        float: left;
-        width: 39%;
-        margin-left:5px;
-        margin-right: 5px;
-        margin-bottom: 20px;
-    }
-    .header p {
-        font-size: 28px;
-    }
 }
