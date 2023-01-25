@@ -259,7 +259,7 @@ h3 {
 }
 
 .right textarea {
-    margin: 10px 10px 10px 15px;
+    margin: 10px 10px 10px 17px;
     padding: 10px;
     width: 90%;
 
@@ -268,13 +268,32 @@ h3 {
 .right input[type=submit] {
     padding: 10px 30px 10px 30px;
     margin-right: 245px;
-    background-color: #c79bb6;
+    background-color: #922d6b;
     color: #fff;
     border: none;
     font-family: latoRegular;
 }
+.right input[type=submit]:hover{
+    background-color: #9b8f9c;
+    color: rgb(255, 246, 246);
+}
 
 @media (max-width:576px) {
+    .right input[type=submit] {
+        background-color: #a70c6b;
+        margin-left: 23px;
+        
+    }
+    .right textarea{
+        margin-right: -13px;
+    }
+    .left {
+        float: left;
+        width: 39%;
+        margin-left:5px;
+        margin-right: 5px;
+        margin-bottom: 20px;
+    }
     .navbar {
         background-color: #000;
     }
@@ -330,8 +349,6 @@ h3 {
 
 .welcome2 {
     margin-top: 30px;
-    /* background-color: aqua; */
-    /* padding-left: -40px; */
     width: 90%;
     margin-left: 30px;
 }
@@ -439,7 +456,20 @@ h3 {
         font-size: 65px;
         width: 100%;
     }
-
+    .right input[type=submit] {
+        background-color: #a70c6b;
+        margin-left: 23px;
+    }
+    .right textarea{
+        margin-right: -13px;
+    }
+    .left {
+        float: left;
+        width: 39%;
+        margin-left:5px;
+        margin-right: 5px;
+        margin-bottom: 20px;
+    }
     .header p {
         font-size: 28px;
     }
