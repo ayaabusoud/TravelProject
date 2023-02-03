@@ -95,7 +95,7 @@ p{
 
 .book-table button{
     margin-top: 10px;
-    margin-left: 80px;
+   
     background-color: rgb(176, 116, 133);
     border-color: rgb(176, 116, 133);
 }
@@ -167,7 +167,6 @@ margin-left: 110px;
 
     .book-table button{
         margin-top: 10px;
-        margin-left: 90px;
         margin-bottom: 100px;
     }
     
@@ -227,7 +226,6 @@ margin-left: 110px;
 
     .book-table button{
         margin-top: 10px;
-        margin-left: 140px;
         margin-bottom: 100px;
     }
     h1{
@@ -276,10 +274,6 @@ margin-left: 110px;
 
     .book-form{
         margin-left: 50px;
-    }
-
-    .book-table button{
-        margin-left: 80px;
     }
 
     .col-xl-4 {

@@ -6,3 +6,5 @@ window.onscroll = (e) => {
  navbar.classList.replace("navbarcolored", "navbartransparent");
  }};
 
+ AOS.init();
+ 
