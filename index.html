@@ -1,243 +1,418 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Travel</title>
 </head>
+
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
     <div class="header">
         <div class="overlay">
-        <nav id="navbar" class="navbar fixed-top navbar-expand-md navbartransparent">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="assets/images/logo.png" alt="logo" width="100" height="35">
-                  </a>              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mt-0 mb-0">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#header">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#services">Services</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#tours">Tours</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#hotels">Hotels</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#restaurants">Restaurants</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact us</a>
-                  </li>
-                
-                </ul>
-              </div>
-            </div>
-          </nav>
-        <div id="header" class="container">
-            <div class="header-content">   
-            <h1>Explore Your Travel Destination!</h1>
-            <p>Where would you like to go?</p>
-            <div class="white-overlay">
-                <div class="row g-1">
-                    <div class="col-xl-6 col-sm-12">
-                       <div>
-                        <select class="travel-location" name="location">
-                            <option value="location">Where would you like to go?</option>
-                            <option value="Greece">Greece</option>
-                            <option value="Bern">Bern</option>
-                            <option value="Barcelona">Barcelona</option>
-                            <option value="Amsterdam">Amsterdam</option>
-                          </select>
-                        </div>  
+            <nav id="navbar" class="navbar fixed-top navbar-expand-md navbartransparent">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/images/logo.png" alt="logo" width="100" height="35">
+                    </a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mt-0 mb-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#header">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#tours">Tours</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#hotels">Hotels</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#restaurants">Restaurants</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact us</a>
+                            </li>
+
+                        </ul>
                     </div>
-                    <div class="col-xl-4 col-sm-12">
-                       <div>
-                        <input class="travel-date" type="text" placeholder="When?">
-                       </div>  
+                </div>
+            </nav>
+            <div id="header" class="container">
+                <div class="header-content">
+                    <h1>Explore Your Travel Destination!</h1>
+                    <p>Where would you like to go?</p>
+                    <div class="white-overlay">
+                        <div class="row g-1">
+                            <div class="col-xl-6 col-sm-12">
+                                <div>
+                                    <select class="travel-location" name="location">
+                                        <option value="location">Where would you like to go?</option>
+                                        <option value="Greece">Greece</option>
+                                        <option value="Bern">Bern</option>
+                                        <option value="Barcelona">Barcelona</option>
+                                        <option value="Amsterdam">Amsterdam</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-sm-12">
+                                <div>
+                                    <input class="travel-date" type="text" placeholder="When?">
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-sm-12">
+                                <div>
+                                    <input class="search" type="submit" value="SEARCH">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-xl-2 col-sm-12">
-                       <div>
-                        <input class="search" type="submit" value="SEARCH">
-                       </div>  
-                    </div>      
                 </div>
             </div>
-            </div>
-        </div>  
-    </div>    
+        </div>
     </div>
-        <div id="tours" class="menu">
-        <div class="container">
+    <div id="services" data-aos="fade-up" class="service">
+        <div class="serviceContainer sectionContainer">
+            <h2 class="mp4">Our Services</h2>
+            <p class="mp3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+            <div class="row">
+                <div class="col-lg-4 col-md-12 ">
+                    <div class="box">
+                        <img class="serviceImg" src="./assets/images/service.PNG" alt="service">
+                        <i class="fa-solid fa-hotel serviceIcon"></i>
+                    </div>
+
+                    <h3>Hotels</h3>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                </div>
+                <div class="col-lg-4 col-md-12 ">
+                    <div class="box">
+                        <img class="serviceImg" src="./assets/images/service.PNG" alt="service">
+                        <i class="fa-solid fa-utensils serviceIcon"></i>
+                    </div>
+
+                    <h3>Resturants</h3>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                </div>
+                <div class="col-lg-4 col-md-12 ">
+                    <div class="box">
+                        <img class="serviceImg" src="./assets/images/service.PNG" alt="service">
+                        <i class="fa-solid fa-map-location-dot serviceIcon"></i>
+                    </div>
+
+                    <h3>Tours</h3>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="cover"></div>
+
+    <div id="tours" data-aos="fade-up" class="menu">
+        <div class="sectionContainer">
             <div class="paragraph">
                 <p class="subheading">BEST DESTINATION</p>
-                <p class="mp4">Best Place to Travel</p>
-                <p class="mp3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                <h2 class="mp4">Best Place to Travel</h2>
+                <p class="mp3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+                </p>
             </div>
-            <div class="row item">
-                <div class="col-lg-4 col-sm-12">
-                <div class=" menu-content">
-                    <img src="assets/images/destination-1.png" alt="destination">
-                    <p class="numOfDay">15 dAYS TOUR</p>
-                    <p>Gurtnellen, Swetzerland</p>
+            <div class="item">
+            <div class="row ">
+                  <div class="col-lg-4 col-md-12">
+                    <div class=" menu-content">
+                        <div class="box">
+                        <div class="menuImage ">
+                            <a href="toursDetails.html"><img src="assets/images/destination-1.png" alt="destination"></a>
+                        </div>
+                        <p class="price">500$</p>
+                        </div>
+                        
+                        <p class="numOfDay">10 dAYS TOUR</p>
+                        <p>Gurtnellen, Swetzerland</p>
+                    </div>
                 </div>
+                
+                <div class="col-lg-4 col-md-12">
+                    <div class="menu-content">
+                        <div class="box">
+                           <div class="menuImage">
+                            <a href="toursDetails.html"><img src="assets/images/destination-2.png" alt="destination"></a>
+                           </div> 
+                           <p class="price">900$</p>
+                        </div>
+                        
+                        <p class="numOfDay">15 dAYS TOUR</p>
+                        <p>Gurtnellen, Swetzerland</p>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-sm-12">
-                <div class="menu-content">
-                    <img src="assets/images/destination-2.png" alt="destination">
-                    <p class="numOfDay">15 dAYS TOUR</p>
-                    <p>Gurtnellen, Swetzerland</p>
+                <div class="col-lg-4 col-md-12">
+                    <div class="menu-content">
+                        <div class="box">
+                            <div class="menuImage">
+                        <a href="toursDetails.html"><img src="assets/images/destination-3.png" alt="destination"></a>
+                        </div>
+                        <p class="price">600$</p>
+                        </div>
+                        
+                        <p class="numOfDay">12 dAYS TOUR</p>
+                        <p>Gurtnellen, Swetzerland</p>
+                    </div>
                 </div>
-                </div>
-                <div class="col-lg-4 col-sm-12">
-                  <div class="menu-content">
-                    <img src="assets/images/destination-3.png" alt="destination">
-                    <p class="numOfDay">15 dAYS TOUR</p>
-                    <p>Gurtnellen, Swetzerland</p>
-                  </div>  
-                </div>
-        </div>
+            </div>
+            <div  class="d-flex justify-content-center">
+                <a class="seeAll" href="tours.html">See All</a>
+            </div>
         </div>
     </div>
-    <div id="hotels" class="menu">
-        <div class="container">
+    </div>
+    <div id="hotels" data-aos="fade-up" class="menu">
+        <div class="sectionContainer">
             <div class="paragraph">
                 <p class="subheading">SUGGESTED HOTEL</p>
-                <p class="mp4">Find Nearest Hotel</p>
-                <p class="mp3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                <h2 class="mp4">Find Nearest Hotel</h2>
+                <p class="mp3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+                </p>
             </div>
             <div class="item">
                 <div class="row">
                     <div class="col-lg-4 col-sm-12">
-                    <div class="menu-content">
-                    <a href="hotelDetails.html"> <img src="assets/images/hotel-1.png" alt="hotel"></a>
-                    <p class="numOfDay">3 NIGHTS</p>
-                    <p>Luxury Hotel in Greece</p>
-                    </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-12">
-                    <div class="menu-content">
-                    <a href="hotelDetails.html">  <img src="assets/images/hotel-2.png" alt="destination"></a>
-                    <p class="numOfDay">3 NIGHTS</p>
-                    <p>Luxury Hotel in Greece</p>
-                    </div>
+                        <div class="menu-content">
+                            <div class="menuImage">
+                               <a href="hotelDetails.html"> <img src="assets/images/hotel-1.png" alt="hotel"></a>   
+                            </div>
+                            
+                            <p class="numOfDay">3 NIGHTS</p>
+                            <p>Luxury Hotel in Greece</p>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-sm-12">
-                     <div class="menu-content">
-                    <a href="hotelDetails.html">  <img src="assets/images/hotel-3.png" alt="destination"></a>
-                    <p class="numOfDay">3 NIGHTS</p>
-                    <p>Luxury Hotel in Greece</p>
-                     </div>
-
+                        <div class="menu-content">
+                            <div class="menuImage">
+                               <a href="hotelDetails.html"> <img src="assets/images/hotel-2.png" alt="destination"></a> 
+                            </div>
+                            <p class="numOfDay">3 NIGHTS</p>
+                            <p>Luxury Hotel in Greece</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12">
+                        <div class="menu-content">
+                            <div class="menuImage">
+                                <a href="hotelDetails.html"> <img src="assets/images/hotel-3.png" alt="destination"></a>
+                            </div>
+                            <p class="numOfDay">3 NIGHTS</p>
+                            <p>Luxury Hotel in Greece</p>
+                        </div>
                     </div>
 
-                </div>               
-        </div>
+                </div>
+            </div>
+            <div  class="d-flex justify-content-center">
+                <a class="seeAll" href="hotels.html">See All</a>
+            </div>
         </div>
     </div>
-    <div id="restaurants" class="menu">
-        <div class="container">
+    <div id="restaurants" data-aos="fade-up" class="menu">
+        <div class="sectionContainer">
             <div class="paragraph">
                 <p class="subheading">RESTAURANT</p>
-                <p class="mp4">Near Resturant </p>
-                <p  class="mp3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                <h2 class="mp4">Near Resturant </h2>
+                <p class="mp3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+                </p>
             </div>
             <div class="item">
                 <div class="row">
                     <div class="col-lg-4 col-sm-12">
-                    <div class="menu-content">
-                    <img src="assets/images/resto-1.png" alt="hotel">
-                    <p class="numOfDay">BERN, SWETZERLAND</p>
-                    <p>Resto Bar, Swetzerland</p>
-                    </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-12">
-                    <div class="menu-content">
-                    <img src="assets/images/resto-2.png" alt="destination">
-                    <p class="numOfDay">BERN, SWETZERLAND</p>
-                    <p>Resto Bar, Swetzerland</p>
-                    </div>
+                        <div class="menu-content">
+                            <div class="menuImage">
+                            <a href="restaurantMenu.html"><img src="assets/images/resto-1.png" alt="hotel"></a>
+                            </div>
+                            <p class="numOfDay">BERN, SWETZERLAND</p>
+                            <p>Resto Bar, Swetzerland</p>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-sm-12">
-                    <div class="menu-content">
-                    <img src="assets/images/hotel-3.png" alt="destination">
-                    <p class="numOfDay">BERN, SWETZERLAND</p>
-                    <p>Resto Bar, Swetzerland</p>
-                    </div> 
+                        <div class="menu-content">
+                            <div class="menuImage">
+                               <a href="restaurantMenu.html"><img src="assets/images/resto-2.png" alt="destination"></a> 
+                            </div>
+                            
+                            <p class="numOfDay">BERN, SWETZERLAND</p>
+                            <p>Resto Bar, Swetzerland</p>
+                        </div>
                     </div>
-                </div>             
-        </div>
+                    <div class="col-lg-4 col-sm-12">
+                        <div class="menu-content">
+                            <div class="menuImage">
+                               <a href="restaurantMenu.html"><img src="assets/images/hotel-3.png" alt="destination"></a> 
+                            </div>
+                            
+                            <p class="numOfDay">BERN, SWETZERLAND</p>
+                            <p>Resto Bar, Swetzerland</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div  class="d-flex justify-content-center">
+                <a class="seeAll" href="restaurants.html">See All</a>
+            </div>
         </div>
     </div>
 
 
-    <div id="contact" class="menu">
-        <div class="container">
+    <div id="contact" data-aos="fade-up" class="menu">
+        <div class="contactContainer sectionContainer">
             <div class="paragraph">
                 <p class="subheading">CONTACT</p>
-                <p class="mp4">Contact Me</p>
-                <p  class="mp3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                <h2 class="mp4">Contact Me</h2>
+                <p class="mp3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+                </p>
             </div>
-            <div class="item-con">
-                <div class="left">
-                     <div class="left-contant">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="left-contant">
                         <div class="above">
-                            <i class="fa-solid fa-house"></i>
+                            <i class="fa-solid fa-house contactIcon"></i>
                             <p>Address</p>
                         </div>
                         <div class="inside">
                             <p>198 West 21th Street, suitle 721 New York NY 10016</p>
                         </div>
-                     </div>
-                     <div class="left-contant">
+                    </div>
+                    <div class="left-contant">
                         <div class="above">
-                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-solid fa-phone contactIcon"></i>
                             <p>Contact Us</p>
                         </div>
                         <div class="inside">
                             <p>+1586 355 359</p>
                         </div>
-                     </div>
-                     <div class="left-contant">
+                    </div>
+                    <div class="left-contant">
                         <div class="above">
-                            <i class="fa-solid fa-paper-plane"></i>
+                            <i class="fa-solid fa-paper-plane contactIcon"></i>
                             <p>Email Address</p>
                         </div>
                         <div class="inside">
                             <p>info@gmail.com</p>
                         </div>
-                     </div>
-                     <div class="left-contant">
+                    </div>
+                    <div class="left-contant ">
                         <div class="above">
-                            <i class="fa-brands fa-dribbble"></i>
+                            <i class="fa-brands fa-dribbble contactIcon"></i>
                             <p>Website</p>
                         </div>
                         <div class="inside">
                             <p>Yourwebsite.com</p>
                         </div>
-                     </div>
+                    </div>
                 </div>
-                <div class="right">
-                    <input type="text" placeholder="Your Name" name="name" required>
-                    <input type="text" placeholder="Your Email" name="mail" required>
-                    <input type="text" placeholder="Subject" name="name" required>
-                    <textarea id="Massage" name="Massage" rows="10" cols="55"placeholder="Massage"></textarea>
-                    <input type="submit" value="Send Massage">
-                </div>            
+                <div class="col-lg-6 col-md-12">
+                    <div class="right">
+                        <form action="">
+                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Your Name">
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Your Email">
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Subject">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"
+                                placeholder="Massage"></textarea>
+                            <input class="d-flex justify-content-start" type="submit" value="Send Massage">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footerContainer">
+            <div class="row">
+                <div class="col-lg-3 col-md-12">
+                    <h2>About <span>Makan</span></h2>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live the blind texts.</p>
+                        <div >
+                            <a class="icon" href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a class="icon" href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            <a class="icon" href=""><i class="fa-brands fa-instagram"></i></a> 
+                        </div>       
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <h2>Information</h2>
+                    <a>&rarr; Online Enquiry</a>
+                    <a>&rarr; General Enquiry</a>
+                    <a>&rarr; Booking</a>
+                    <a>&rarr; Privacy</a>
+                    <a>&rarr; Refund Policy</a>
+                    <a>&rarr; Call Us</a>
+    
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <h2>Experience</h2>
+                    <a>&rarr; Adventure</a>
+                    <a>&rarr; Hotel and Restaurant</a>
+                    <a>&rarr; Beach</a>
+                    <a>&rarr; Nature</a>
+                    <a>&rarr; Camping</a>
+                    <a>&rarr; Party</a>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <h2>Have a Questions?</h2>
+                    <div class="row">
+                        <div class="col-1">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="col-11">
+                           <p>203 Fake St. Mountain View, San Francisco, California, USA</p>  
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="col-11">
+                           <p>	+2 392 3929 210</p>  
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="col-11">
+                           <p>info@yourdomain.com</p>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center CopyRight">
+                <p>Copyright &copy; 2023 All rights reserved</p>
             </div>
         </div>
     </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/home.js"></script>
 </body>
+
 </html>
