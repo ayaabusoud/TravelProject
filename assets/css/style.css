@@ -63,7 +63,6 @@ html{
     overflow: hidden;
 }
 
-
 .overlay {
     background-color: rgb(0, 0, 0, .1);
     position: absolute;
@@ -76,6 +75,10 @@ html{
     font-size: 70px;
     font-family: latoBold;
     width: 50%;
+}
+ .aabb{
+    background-color: #5e384f;
+    padding-right: -150px;
 }
 
 .header p {
@@ -93,7 +96,46 @@ html{
     padding: 10px;
     margin: auto;
 }
-
+.SEC-ABC{
+    overflow: hidden;
+    margin-top: 70px;
+    margin-left: 150px;
+}
+.left-image{
+    float: left;
+    width: 33%;
+}
+.left-image img{
+    width: 400px;
+    height: 370px;
+}
+.SEC-ABC .right-SEC{
+    float: left;
+    width: 40%;
+    margin-left: 40px;
+}
+.SEC-ABC .right-SEC span{
+    font-size: 30px;
+    color: orange;
+}
+.SEC-ABC .right-SEC p{
+    color: #999999;
+    font-size: smaller;
+}
+.SEC-ABC .right-SEC .title { 
+    font-size: x-large;
+   color: #000;
+   font-family: "Times New Roman", Times, serif;
+}
+.SEC-ABC .right-SEC .paragraph{
+    width: 300px;
+    line-height: 25px;
+}
+.SEC-ABC .right-SEC .smallParagraph{
+    width: 300px;
+    line-height: 20px;
+    font-size: x-small;
+}
 .travel-location {
     width: 95%;
     padding: 12px 20px;
@@ -223,7 +265,83 @@ h3 {
     line-height: 1.8;
     font-weight: 400;
 }
+.container{
+    width: 80%;
+    margin: auto;
 
+}
+.section2{
+    margin-top: 70px;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+.section3 {
+    margin-top: 50px;
+    height: 100vh;
+}
+.section2 .imageA img{
+   height: 200px;
+}
+.section3 button{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.section3 .contact {
+    float: left;
+    width: 50%;
+}
+.section3 .contact .left-cont img{
+    width: 100px;
+}
+.section-footer .preICON {
+    background-color: #5e384f;
+    
+}
+.section3 .contact .left-cont{
+    float: left;
+    width: 50%;
+}
+.section-footer img{
+    width: 200px;
+    /* height: 400px; */
+}
+.section3 .contact .right-cont{
+    float: left;
+    width: 50%;
+}
+.left-sec{
+    float: left;
+    width: 40%;
+}
+
+.group a{
+    color: red;
+    text-decoration: none;
+}
+.M-Left{
+   margin-left: -140px; 
+}
+.imagen{
+    float: left;
+    width: 50%;
+    padding-left: 200px;
+}
+.left-sec .btnn {
+    background-color: #b5779c;
+    border: none;
+    text-align: center; 
+}
+.Light-btnn{
+    width: 200px;
+}
+.container .left-sec p{ 
+    width: 500px;
+}
+.imagen img{
+    width: 400px;
+    height: 400px;
+   
+}
 .menu-content p {
     width: 70%;
     line-height: 25px;
@@ -593,5 +711,4 @@ h3 {
         font-family: "Poppins", Arial, sans-serif;
         color: #777171;
     }
-
 }
