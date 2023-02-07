@@ -18,7 +18,8 @@
     padding: 0;
     box-sizing: border-box
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -76,7 +77,8 @@ html{
     font-family: latoBold;
     width: 50%;
 }
- .aabb{
+
+.aabb {
     background-color: #5e384f;
     padding-right: -150px;
 }
@@ -96,46 +98,101 @@ html{
     padding: 10px;
     margin: auto;
 }
-.SEC-ABC{
+
+.SEC-ABC {
     overflow: hidden;
     margin-top: 70px;
     margin-left: 150px;
 }
-.left-image{
+
+.left-image {
     float: left;
     width: 33%;
 }
-.left-image img{
+
+.left-image img {
     width: 400px;
     height: 370px;
 }
-.SEC-ABC .right-SEC{
+
+.SEC-ABC .right-SEC {
     float: left;
     width: 40%;
     margin-left: 40px;
 }
-.SEC-ABC .right-SEC span{
+
+.SEC-ABC .right-SEC span {
     font-size: 30px;
     color: orange;
 }
-.SEC-ABC .right-SEC p{
+
+.SEC-ABC .right-SEC p,
+.container .section1 .rightColumn p {
     color: #999999;
     font-size: smaller;
 }
-.SEC-ABC .right-SEC .title { 
-    font-size: x-large;
-   color: #000;
-   font-family: "Times New Roman", Times, serif;
+
+.container .sec-3 .rightColumn button {
+    background-color: #d3cccc;
+    color: #000;
+    font-family: "Times New Roman", Times, serif;
+    font-size: smaller;
+    border-radius: 10%;
+    margin-bottom: 30px;
 }
-.SEC-ABC .right-SEC .paragraph{
+
+.SEC-ABC .right-SEC .title {
+    font-size: x-large;
+    color: #000;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.sec-3 .title {
+    color: #000;
+    font-family: "Times New Roman", Times, serif;
+    font-size: medium;
+
+}
+
+.sec-3 .primary {
+    margin-left: 180px;
+    font-size: x-large;
+    margin-bottom: 20px;
+}
+
+.sec-3 .sub-title {
+    color: #a7a4a4;
+    font-size: smaller;
+}
+
+.sec-3 p {
+    color: #999999;
+    font-size: medium;
+}
+
+.final-sec {
+    margin-left: 70px;
+}
+
+.final-sec p {
+    margin-left: 10px;
+}
+
+.final-sec .right label {
+    color: #878585;
+}
+
+.SEC-ABC .right-SEC .paragraph {
     width: 300px;
     line-height: 25px;
 }
-.SEC-ABC .right-SEC .smallParagraph{
+
+.SEC-ABC .right-SEC .smallParagraph {
     width: 300px;
     line-height: 20px;
     font-size: x-small;
 }
+
 .travel-location {
     width: 95%;
     padding: 12px 20px;
@@ -181,9 +238,10 @@ html{
     width: 60%;
 }
 
-.service{
+.service {
     padding-bottom: 100px;
 }
+
 .serviceIcon {
     position: absolute;
     z-index: 99;
@@ -194,16 +252,97 @@ html{
     font-size: 4em;
 }
 
+/* touer */
+.tourImg {
+    width: 100%;
+    height: 90%;
+}
+
+.rightColumn {
+    float: left;
+    width: 40%;
+    margin-left: 30px;
+}
+
+.rightColumn p {
+    width: 700px;
+}
+
+.table tbody tr th {
+    padding-bottom: 20px;
+}
+
+.colorBtn {
+    background-color: #5e384f;
+}
+
+.container .section1 .rightColumn .title {
+    font-size: x-large;
+    color: #000000;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.container .section1 .rightColumn .sub-title {
+    font-size: medium;
+    color: #000000;
+}
+
+.section2 img {
+    width: 90%;
+    height: 40%;
+}
+
+.section12 {
+    margin-top: 20px;
+}
+
+.section12 img {
+    height: 500px;
+    width: 90%;
+}
+
+.section12 div {
+    margin-top: 20px;
+}
+
+.section12 div p {
+    width: 90%;
+    color: #999999;
+    line-height: 32px;
+}
+
+.section12 div .title {
+    font-size: large;
+    color: #000;
+    background-color: #5e384f;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.table tbody tr td {
+    color: #999999;
+}
+
+.sec-3 {
+    margin-top: 30px;
+}
+
+.sec-3 img {
+    border-radius: 60%;
+    width: 20%;
+    height: 20%;
+    margin-left: 170px;
+}
 
 /* cover */
-.cover{
+.cover {
     background-image: url(../images/bg_4.jpg);
     padding: 250px 0;
     background-size: cover;
     background-attachment: fixed;
 }
 
-.menu, .service{
+.menu,
+.service {
     text-align: center;
     margin-top: 50px;
 }
@@ -265,83 +404,114 @@ h3 {
     line-height: 1.8;
     font-weight: 400;
 }
-.container{
+
+.container {
     width: 80%;
     margin: auto;
 
 }
-.section2{
+
+.section2 {
     margin-top: 70px;
     overflow: hidden;
     margin-bottom: 100px;
 }
+
 .section3 {
     margin-top: 50px;
     height: 100vh;
 }
-.section2 .imageA img{
-   height: 200px;
+
+.section2 .imageA img {
+    height: 200px;
 }
-.section3 button{
+
+.section3 button {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
 .section3 .contact {
     float: left;
     width: 50%;
 }
-.section3 .contact .left-cont img{
+
+.section3 .contact .left-cont img {
     width: 100px;
 }
+
 .section-footer .preICON {
     background-color: #5e384f;
-    
+
 }
-.section3 .contact .left-cont{
+
+.section3 .contact .left-cont {
     float: left;
     width: 50%;
 }
-.section-footer img{
+
+.section-footer img {
     width: 200px;
     /* height: 400px; */
 }
-.section3 .contact .right-cont{
+
+.section3 .contact .right-cont {
     float: left;
     width: 50%;
 }
-.left-sec{
+
+.left-sec {
     float: left;
     width: 40%;
 }
 
-.group a{
+.group a {
     color: red;
     text-decoration: none;
 }
-.M-Left{
-   margin-left: -140px; 
+
+.M-Left {
+    margin-left: -140px;
 }
-.imagen{
+
+.imagen {
     float: left;
     width: 50%;
     padding-left: 200px;
 }
+
 .left-sec .btnn {
     background-color: #b5779c;
     border: none;
-    text-align: center; 
+    text-align: center;
 }
-.Light-btnn{
+
+.container .section1 .rightColumn .colorBtn {
+    background-color: #b5779c;
+}
+
+.container .section1 .rightColumn span {
+    color: #b5779c;
+}
+
+.container .section1 {
+    margin-top: 70px;
+}
+
+.Light-btnn {
     width: 200px;
 }
-.container .left-sec p{ 
+
+.container .left-sec p {
     width: 500px;
 }
-.imagen img{
+
+.imagen img {
     width: 400px;
     height: 400px;
-   
+
 }
+
 .menu-content p {
     width: 70%;
     line-height: 25px;
@@ -356,7 +526,7 @@ h3 {
     margin: auto;
 }
 
-.seeAll{
+.seeAll {
     padding: 10px 60px;
     border-radius: 3px;
     background-color: rgb(176, 116, 133);
@@ -366,32 +536,36 @@ h3 {
     margin-top: 15px;
     text-decoration: none;
 }
-.seeAll:hover{
-    background-color: rgb(163, 106, 122) ;
+
+.seeAll:hover {
+    background-color: rgb(163, 106, 122);
 }
-.menu img{
+
+.menu img {
     transition: 0.7s;
     width: 100%;
     height: 100%;
 }
-.menu .menuImage{
+
+.menu .menuImage {
     overflow: hidden !important;
     width: 90%;
     margin: auto;
 }
 
-.menu .menuImage:hover img{
+.menu .menuImage:hover img {
     transform: scale(1.2);
 
 }
-.menu-content p{
+
+.menu-content p {
     margin-left: 5%;
 }
 
-.price{
+.price {
     position: absolute;
     z-index: 99;
-    background-color:rgb(176, 116, 133) ;
+    background-color: rgb(176, 116, 133);
     bottom: 0.1%;
     width: 50px !important;
     color: #fff;
@@ -452,38 +626,47 @@ h3 {
     border: none;
     font-family: latoRegular;
     margin-bottom: 5px;
-} 
-.right input[type=submit]:hover {
-    background-color: rgb(163, 106, 122) ;
 }
-.footer{
+
+.right input[type=submit]:hover {
+    background-color: rgb(163, 106, 122);
+}
+
+.footer {
     background: #1b1919;
 }
-.footerContainer{
+
+.footerContainer {
     width: 75%;
     margin: auto;
 }
-.footer h2{
+
+.footer h2 {
     font-size: 21px;
     color: #fff;
     padding: 40px 0 20px 0;
 }
-.footer h2 span{
+
+.footer h2 span {
     color: #c79bb6;
 }
-.footer a{
+
+.footer a {
     display: block;
     margin-bottom: 12px;
     color: rgba(255, 255, 255, 0.6) !important;
 }
+
 .footer p {
     color: rgba(255, 255, 255, 0.6);
     margin-bottom: 25px !important;
 }
-.footer i{
+
+.footer i {
     color: rgba(255, 255, 255, 0.6);
 }
-.footer .icon{
+
+.footer .icon {
     display: inline;
     height: 50px;
     width: 50px;
@@ -492,26 +675,33 @@ h3 {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     position: relative;
-    margin:10px; 
+    margin: 10px;
 }
-.footer .icon:hover{
+
+.footer .icon:hover {
     background: rgba(255, 255, 255, 0.066);
 }
-.footer .icon i{
+
+.footer .icon i {
     position: absolute;
     font-size: 20px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.footer a:hover{
+
+.footer a:hover {
     cursor: pointer;
 }
-.CopyRight{
-    margin-top: 30px ;
+
+.CopyRight {
+    margin-top: 30px;
 }
 
 @media (max-width:576px) {
+    .rightColumn p{
+        width: 300px;
+    }
     .navbar {
         background-color: #000;
     }
@@ -545,7 +735,8 @@ h3 {
     .serviceContainer {
         width: 65%;
     }
-    .contactContainer{
+
+    .contactContainer {
         width: 90%;
     }
 }
@@ -564,7 +755,7 @@ h3 {
 }
 
 @media (576px < width <=850px) {
-    
+
 
     .header h1 {
         padding-top: 220px;
