@@ -77,27 +77,27 @@ h1 {
 
 .block-27 ul li a,
 .block-27 ul li span {
-    color: #b2bbc9;
-    text-align: center;
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    line-height: 38px;
-    border-radius: 50%;
-    border: 1px solid #cccccc;
-    text-decoration: none;
+    color: #b2bbc9 !important;
+    text-align: center !important;
+    display: inline-block !important;
+    width: 40px!important; 
+    height: 40px !important;
+    line-height: 40px !important;
+    border-radius: 50% !important;
+    border: 1px solid #cccccc !important;
+    text-decoration: none !important;
 }
 
-.block-27 ul li.active a,
-.block-27 ul li.active span {
-    background: #b2bbc9;
-    color: #fff;
-    border: 1px solid transparent;
+.block-27  .activeBtn a,
+.block-27 .activeBtn span {
+    background-color: #b2bbc9 !important;
+    color: #fff !important;
+    border: 1px solid transparent !important;
 }
 
 .block-27{
-    display: flex;
-    justify-content: center;
+    display: flex !important;
+    justify-content: center !important;
 }
 ul{
     padding-left: 0px !important;
@@ -129,7 +129,22 @@ p{
     font-size: 12px;
 }
 
+.menu-content p {
+    line-height: 15px !important;
+    padding-bottom: 20px;
+}
 
+.city{
+    padding-bottom: 3px !important;
+}
+.numOfDay{
+    padding-bottom: 3px !important;
+    padding-top: 7px;
+}
+.price{
+    padding-bottom: 1px !important;
+    color: #fff !important;
+}
 @media (max-width:576px) {
     a{ 
        display: flex;

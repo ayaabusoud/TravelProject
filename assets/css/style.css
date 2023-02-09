@@ -376,6 +376,8 @@ img {
     letter-spacing: 2px;
     color: #999999;
     text-align: left;
+    width: 100% !important;
+    font-size: 10px !important;
 }
 
 .mp4 {
@@ -537,7 +539,7 @@ h3 {
     text-decoration: none;
 }
 
-.seeAll:hover {
+.seeAll:hover , .search:hover{
     background-color: rgb(163, 106, 122);
 }
 
@@ -665,6 +667,9 @@ h3 {
 .footer i {
     color: rgba(255, 255, 255, 0.6);
 }
+.footer a:hover{
+    color: #fff !important;
+}
 
 .footer .icon {
     display: inline;
@@ -675,7 +680,10 @@ h3 {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     position: relative;
-    margin: 10px;
+    margin-right: 5px;
+}
+.footer .iconLeft{
+    margin-left: 5px;
 }
 
 .footer .icon:hover {
@@ -696,6 +704,13 @@ h3 {
 
 .CopyRight {
     margin-top: 30px;
+}
+
+.notVisible{
+    display: none !important;
+}
+.visible{
+    display:inline !important;
 }
 
 @media (max-width:576px) {
@@ -902,4 +917,12 @@ h3 {
         font-family: "Poppins", Arial, sans-serif;
         color: #777171;
     }
+    .footerCenter{
+        text-align: center;
+    }
+    .footerCenterIcon{
+        display: flex;
+        justify-content: center;
+    }
+    
 }
