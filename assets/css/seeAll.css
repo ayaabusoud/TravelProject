@@ -145,10 +145,42 @@ p{
     padding-bottom: 1px !important;
     color: #fff !important;
 }
+
+.result{
+    text-align: center;
+    margin: auto ; 
+    font-size: 20px;
+    color: #aeaeae;
+    padding-top: 100px;
+    margin-left: 50px;
+ 
+}
+.sadEmoji{
+ text-align: center;
+ margin: auto ;    
+ margin-left: 80px;
+}
+.emoji{
+ height: 130px;
+ width: 150px;
+
+}
+
+
+
 @media (max-width:576px) {
     a{ 
        display: flex;
        justify-content: center;
+    }
+    .result{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-left: 0px;
+     
+    }
+    .sadEmoji{   
+        margin-left: 0px;
     }
    
     
@@ -171,5 +203,15 @@ p{
      .price{
         left: 15%;
      }
+     .result{  
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-left: 0px;
+        padding-left: 0px !important;
+     
+    }
+    .sadEmoji{   
+        margin-left: 0px;
+    }
 
 }

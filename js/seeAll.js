@@ -1,4 +1,4 @@
-
+//city filter
 let cities = Array.from(document.getElementsByClassName("menu-content"));
 
  let filterSeeAll = () =>{

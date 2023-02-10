@@ -18,6 +18,7 @@
         <div class="row">
             <div class="col-lg-9 col-md-12">
                 <div class="tab-content" id="nav-tabContent">
+                <div id="noResult"></div>
                 <div class="tab-pane fade show active" id="list-firstPage" role="tabpanel"
                     aria-labelledby="list-firstPage-list">
                 
@@ -284,10 +285,10 @@
                         <div class="row">
                             <div class="col-lg-12 align-items-end mb-3">
                                 <div class="form-group">
-                                    <label class="label" for="#">Places</label>
+                                    <label class="label" for="#">Nmber of days</label>
                                     <div class="form-field">
                                         <div class="icon"><span class="ion-ios-search"></span></div>
-                                        <input type="text" class="form-control" placeholder="Search place">
+                                        <input type="text" class="form-control daysNumber" value="Number of days"  placeholder="Number of days">
                                     </div>
                                 </div>
                             </div>
@@ -296,7 +297,7 @@
                                     <label class="label" for="#">Check-in date</label>
                                     <div class="form-field">
                                         <div class="icon"><span class="ion-ios-calendar"></span></div>
-                                        <input type="text" class="form-control checkin_date"
+                                        <input type="datetime-local" type="text" class="form-control checkin_date"
                                             placeholder="Check In Date">
                                     </div>
                                 </div>
@@ -306,7 +307,7 @@
                                     <label class="label" for="#">Check-out date</label>
                                     <div class="form-field">
                                         <div class="icon"><span class="ion-ios-calendar"></span></div>
-                                        <input type="text" class="form-control checkout_date"
+                                        <input type="datetime-local" type="text" class="form-control checkout_date"
                                             placeholder="Check Out Date">
                                     </div>
                                 </div>
@@ -314,7 +315,7 @@
                             <div class="col-lg-12 align-self-end">
                                 <div class="form-group">
                                     <div class="form-field">
-                                        <input type="submit" value="Search" class="form-control btn btn-primary">
+                                        <input type="submit" value="Search" class="form-control btn btn-primary filterButton">
                                     </div>
                                 </div>
                             </div>
@@ -349,6 +350,7 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
         <script src="js/seeAll.js"></script>
+        <script src="js/hotels.js"></script>
 </body>
 
 </html>
