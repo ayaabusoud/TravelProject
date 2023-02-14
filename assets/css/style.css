@@ -34,6 +34,9 @@ html {
 .header a {
     color: white;
 }
+.container .row.seeMore a{
+    background-color: #5e384f;
+}
 
 .navbarcolored {
     transition: 500ms ease;
@@ -121,31 +124,6 @@ html {
     margin-left: 40px;
 }
 
-.SEC-ABC .right-SEC span {
-    font-size: 30px;
-    color: orange;
-}
-
-.SEC-ABC .right-SEC p,
-.container .section1 .rightColumn p {
-    color: #999999;
-    font-size: smaller;
-}
-
-.container .sec-3 .rightColumn button {
-    background-color: #d3cccc;
-    color: #000;
-    font-family: "Times New Roman", Times, serif;
-    font-size: smaller;
-    border-radius: 10%;
-    margin-bottom: 30px;
-}
-
-.SEC-ABC .right-SEC .title {
-    font-size: x-large;
-    color: #000;
-    font-family: "Times New Roman", Times, serif;
-}
 
 .containerTour,.reviewContainer{
     width: 70%;
