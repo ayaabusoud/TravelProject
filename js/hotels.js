@@ -9,7 +9,7 @@ days[0].addEventListener("click", function(){
 })
 
 //days filter
-btn[0].addEventListener("click",function(){
+btn[0].addEventListener("click",function(event){
         pageOneDiv.innerHTML ="";
         let userDays = days[0].value;
         let counter = 0;
@@ -52,5 +52,7 @@ btn[0].addEventListener("click",function(){
         </div>
         </div>`
         }
+
+        event.preventDefault();
 
 })

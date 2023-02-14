@@ -5,7 +5,7 @@ let resType = document.getElementById("resType");
 let pageOneDiv = document.getElementById("noResult");
 
 
-btn[0].addEventListener("click",function(){
+btn[0].addEventListener("click",function(event){
     let userResType = resType.value
     pageOneDiv.innerHTML ="";
     let counter = 0;
@@ -31,7 +31,7 @@ btn[0].addEventListener("click",function(){
                  }
              
         }
-
+       
     });
 
     if(counter == 0){
@@ -45,4 +45,6 @@ btn[0].addEventListener("click",function(){
         </div>
         </div>`  
       }
+
+      event.preventDefault();
 })
