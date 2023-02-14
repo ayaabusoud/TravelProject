@@ -105,29 +105,11 @@ html {
     margin: auto;
 }
 
-.SEC-ABC {
-    overflow: hidden;
-    margin-top: 70px;
-    margin-left: 150px;
+.container .row .title-sec {
+    color: #777171;
+    font-size: large;
+    letter-spacing: 1px;
 }
-
-.left-image {
-    float: left;
-    width: 33%;
-}
-
-.left-image img {
-    width: 400px;
-    height: 370px;
-}
-
-.SEC-ABC .right-SEC {
-    float: left;
-    width: 40%;
-    margin-left: 40px;
-}
-
-
 .containerTour,.reviewContainer{
     width: 70%;
     margin: auto;
