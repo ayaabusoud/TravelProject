@@ -4,12 +4,24 @@
  let reservationBtn = document.getElementById("reservation");
 
  reservationBtn.addEventListener("click", function(event){
-    Swal.fire({
-       icon: 'success',
-       title: 'Your reservation has been added successfully',
-       showConfirmButton: false,
-       timer: 1400
-     })   
+
+  const Toast = Swal.mixin({
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 2500,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.addEventListener('mouseenter', Swal.stopTimer)
+      toast.addEventListener('mouseleave', Swal.resumeTimer)
+    }
+  })
+  
+  Toast.fire({
+    icon: 'success',
+    title: 'Your reservation has been added successfully'
+  })
+
      event.preventDefault();
    });
    

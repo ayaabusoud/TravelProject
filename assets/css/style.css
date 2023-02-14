@@ -147,6 +147,12 @@ html {
     font-family: "Times New Roman", Times, serif;
 }
 
+.containerTour,.reviewContainer{
+    width: 70%;
+    margin: auto;
+    margin-top: 100px;
+}
+
 .sec-3 .title {
     color: #000;
     font-family: "Times New Roman", Times, serif;
@@ -156,7 +162,7 @@ html {
 
 .sec-3 .primary {
     margin-left: 180px;
-    font-size: x-large;
+    font-size: 21px;
     margin-bottom: 20px;
 }
 
@@ -172,6 +178,7 @@ html {
 
 .final-sec {
     margin-left: 70px;
+    margin-top: 30px;
 }
 
 .final-sec p {
@@ -181,7 +188,10 @@ html {
 .final-sec .right label {
     color: #878585;
 }
-
+.reviewImg{
+    display: flex;
+    justify-content:end;
+}
 .SEC-ABC .right-SEC .paragraph {
     width: 300px;
     line-height: 25px;
@@ -259,30 +269,32 @@ html {
 }
 
 .rightColumn {
-    float: left;
-    width: 40%;
     margin-left: 30px;
 }
 
-.rightColumn p {
-    width: 700px;
-}
 
 .table tbody tr th {
     padding-bottom: 20px;
 }
 
 .colorBtn {
-    background-color: #5e384f;
+    color: rgb(176, 116, 133) !important;
+    border-color:rgb(176, 116, 133) !important ;
+    color: white !important;
 }
 
-.container .section1 .rightColumn .title {
+.colorBtn:hover {
+    background-color: rgb(163, 106, 122) !important;
+    color: white !important;
+}
+
+.containerTour .section1 .rightColumn .title {
     font-size: x-large;
     color: #000000;
     font-family: "Times New Roman", Times, serif;
 }
 
-.container .section1 .rightColumn .sub-title {
+.containerTour .section1 .rightColumn .sub-title {
     font-size: medium;
     color: #000000;
 }
@@ -327,10 +339,13 @@ html {
 }
 
 .sec-3 img {
-    border-radius: 60%;
-    width: 20%;
-    height: 20%;
-    margin-left: 170px;
+    border-radius: 50%;
+    width: 30%;
+    height: 25%;
+    
+}
+.containerTour button ,.reviewContainer button{
+    margin-bottom: 20px !important;
 }
 
 /* cover */
@@ -488,15 +503,15 @@ h3 {
     text-align: center;
 }
 
-.container .section1 .rightColumn .colorBtn {
+.containerTour .section1 .rightColumn .colorBtn {
     background-color: #b5779c;
 }
 
-.container .section1 .rightColumn span {
+.containerTour .section1 .rightColumn span {
     color: #b5779c;
 }
 
-.container .section1 {
+.containerTour .section1 {
     margin-top: 70px;
 }
 
@@ -504,10 +519,28 @@ h3 {
     width: 200px;
 }
 
-.container .left-sec p {
+.containerTour .left-sec p {
     width: 500px;
 }
 
+.tourDescription{
+    color: #9c9c9c;
+    width: 95% !important;
+}
+.review .form-control{
+    padding: 5px !important;
+    width: 95% !important;
+    margin-left: 20px !important;
+}
+.review label{
+    margin-left: 21px !important;
+}
+.review .submitReview{
+    margin-left: 20px !important;
+}
+.g-1{
+    margin-bottom: 15px;
+}
 .imagen img {
     width: 400px;
     height: 400px;
@@ -714,9 +747,7 @@ h3 {
 }
 
 @media (max-width:576px) {
-    .rightColumn p{
-        width: 300px;
-    }
+
     .navbar {
         background-color: #000;
     }
@@ -754,6 +785,29 @@ h3 {
     .contactContainer {
         width: 90%;
     }
+    .containerTour,.reviewContainer{
+        width: 90%;
+    }
+    .final-sec{
+        margin-left: 0px;
+    }
+    .reviewImg{
+        display: flex;
+        justify-content:center;
+    }
+    .sec-3 img {
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .rightColumn {
+        margin-left: 0px;
+    }
+    .sec-3 .primary {
+        margin-left: 0px;
+    }
+
 }
 
 .more {
@@ -923,6 +977,28 @@ h3 {
     .footerCenterIcon{
         display: flex;
         justify-content: center;
+    }
+    .containerTour,.reviewContainer{
+        width: 90%;
+    }
+    .final-sec{
+        margin-left: 0px;
+    }
+ 
+    .sec-3 img {
+        border-radius: 50%;
+        width: 50%;
+        height: 50%;
+        
+    }
+    .rightColumn {
+        margin-left: 0px;
+    }
+    .sec-3 .primary {
+        margin-left: 55px;
+    }
+    .containerTour button{
+        margin-bottom: 20px;
     }
     
 }
