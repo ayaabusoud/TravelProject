@@ -11,7 +11,7 @@ days[0].addEventListener("click", function(){
 })
 
 //days and price filter
-btn[0].addEventListener("click",function(){
+btn[0].addEventListener("click",function(event){
         pageOneDiv.innerHTML ="";
         let counter = 0;
         let userPrice = price[0].value;
@@ -61,4 +61,5 @@ btn[0].addEventListener("click",function(){
         </div>
         </div>`
     }
+    event.preventDefault();
 })

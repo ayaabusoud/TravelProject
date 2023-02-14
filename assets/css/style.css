@@ -54,9 +54,7 @@ html {
 .nav-link:hover {
     color: rgb(176, 116, 133) !important;
 }
-.container .curs{
-    margin-left: 300px;
-}
+
 
 /* header */
 .header {
@@ -708,6 +706,57 @@ h3 {
 .visible{
     display:inline !important;
 }
+/*tours details*/
+.hotelContainer{
+    width: 70%;
+    margin: auto !important;
+    padding: 100px 0px;
+}
+
+.hotelImage img{
+    width: 50%;
+}
+
+.hotelContainer h2{
+    margin: 50px 0px 30px 0 ;
+}
+
+.rooms img{
+    width: 90%;
+    margin-bottom: 40px;
+}
+.roomImg{
+    display: flex;
+    justify-content: end;
+}
+.roomPrice{
+    color:rgb(176, 116, 133);
+    font-size: 25px;
+}
+
+.hotelContainer p{
+    color: #9c9c9c;
+}
+.hotelContainer h3{
+    font-size: 17px !important;
+}
+.bookRoom{
+    margin-top: 10px;
+    background-color: rgb(176, 116, 133) !important;
+    border-color: rgb(176, 116, 133) !important;
+}
+.bookRoom:hover{
+    background-color: rgb(152, 101, 116) !important;
+    border-color: rgb(152, 101, 116) !important;
+}
+.curs{
+   margin: auto !important;
+   width: 60%;
+   padding-top:50px;
+}
+.reviewHotel{
+    margin-top: 20px;
+}
 
 @media (max-width:576px) {
 
@@ -769,6 +818,26 @@ h3 {
     }
     .sec-3 .primary {
         margin-left: 0px;
+    }
+    
+    .hotelImage img{
+        width: 100%;
+    }
+  
+    .rooms img{
+        width: 100%;
+    }
+    
+    .bookRoom{
+        margin-bottom: 30px;
+    }
+    .curs{
+       margin: auto !important;
+       width: 100%;
+       padding-top:50px;
+    }
+    .reviewHotel{
+        margin-top: 0px;
     }
 
 }
@@ -962,6 +1031,26 @@ h3 {
     }
     .containerTour button{
         margin-bottom: 20px;
+    }
+    .hotelImage img{
+        width: 100%;
+        margin-top: 50px;
+    }
+  
+    .rooms img{
+        width: 100%;
+    }
+    
+    .bookRoom{
+        margin-bottom: 30px;
+    }
+    .curs{
+       margin: auto !important;
+       width: 100%;
+       padding-top:50px;
+    }
+    .reviewHotel{
+        margin-top: 0px;
     }
     
 }
