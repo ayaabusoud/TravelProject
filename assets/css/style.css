@@ -859,6 +859,10 @@ h3 {
     .reviewHotel{
         margin-top: 0px;
     }
+    .overlayRoom{
+        width:100%;
+        height:85%;
+    }
 
 }
 
@@ -1071,6 +1075,10 @@ h3 {
     }
     .reviewHotel{
         margin-top: 0px;
+    }
+    .overlayRoom{
+        width:100%;
+        height:92%;
     }
     
 }
